@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Backyard Birds of Utah - Home</title>
+    <link href="mystyles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="myscripts.js"></script>
+</head>
+
+<body onload="preloadImages();">
+
+    <header>
+        <a href="#" onmouseover="document.logo.src='Images/logo2.png';" onmouseout="document.logo.src='Images/logo1.png';">
+            <img src="Images/logo1.png" alt="Utah Backyard Birds Logo" id="logo" name="logo">
+        </a>
+        <img src="Images/Banner.png" alt="Site Banner" id="banner">
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Tributes</a>
+            <a href="#">Survey</a>
+            <a href="#">Favorites</a>
+        </nav>
+    </header>
+
+    <section>
+        <article>
+            <h1>Welcome to Backyard Birds of Utah!</h1>
+            <p>If you love birdwatching like we do, you should enjoy looking around this site. Take a look at our Bird Profiles and take the opportunity to complete our survey.</p>
+
+            <h2>Our Photo Gallery</h2>
+            <div id="thumbnails">
+                <img src="Images/thumbnails/Image1Sm.jpg" alt="Heron Drinking From Pond" onmouseover="swapImage(0);">
+                <img src="Images/thumbnails/Image2Sm.jpg" alt="Pigeon Perched on Stones" onmouseover="swapImage(1);">
+                <img src="Images/thumbnails/Image3Sm.jpg" alt="Cardinal on a Snowy Branch" onmouseover="swapImage(2);">
+                <img src="Images/thumbnails/Image4Sm.jpg" alt="Pelicans at the Beach" onmouseover="swapImage(3);">
+            </div>
+
+            <div id="image-display">
+                <img id="theImage" src="Images/fullsize/Image1Lg.jpg" alt="Heron">
+                <h3 id="bottomText">Heron Drinking From Pond</h3>
+            </div>
+
+            <h2>Customer Tributes</h2>
+            <div class="mini-tribute">
+                <img src="Images/HawkSm.jpg" alt="Hawk Image" width="150" height="100">
+                <p>My name is Dave Jorgensen. I live in northern Utah and I enjoy bird watching. <a href="#">more >></a></p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>
+            <a href="mailto:10950628@uvu.edu">Contact Webmaster</a>
+        </p>
+        <p>This web site has been created solely for educational purposes.</p>
+    </footer>
+
+</body>
+</html>
